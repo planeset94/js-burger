@@ -9,8 +9,31 @@
     margin: auto;
 }
 
-
+.food-emoticon{
+    width: 30px;
+    height: 100%;
+}
 /* UTILITY CLASS */
 .list-none{
     list-style:none;
+}
+.mx-1{
+    margin:0 1rem;
+}
+.ml-05{
+    margin-left: 0.5rem;
+}
+.d-flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.half_flex-basis{
+    flex-basis: 50%;
+}
+
+ul>li{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding:1rem 0;
 }
