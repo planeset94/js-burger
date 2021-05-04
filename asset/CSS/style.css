@@ -30,6 +30,33 @@
 .half_flex-basis{
     flex-basis: 50%;
 }
+/* /UTILITY CLASS */
+
+.form-ingredients{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.discount-group{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.discount-group label{
+    width: 25%;
+}
+
+.discount-group input{
+    width: 60%;
+}
+
+#calc_price{
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
 
 ul>li{
     display: flex;
