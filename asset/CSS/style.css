@@ -20,6 +20,14 @@ body{
 /* HEADER  */
 header{
     background-color: #FDBB40;
+    position: relative;
+}
+header img{
+    position: absolute;
+    right: -4rem;
+    width: 170px;
+    height: auto;
+    top: -0.5rem;
 }
 h1{
     padding: 2.5rem 0 1rem 0;
@@ -77,9 +85,12 @@ ul>li{
 }
 
 #calc_price{
-    padding: 0.5rem;
+    padding: 0.8rem 1rem;
+    border:0;
+    font-weight: bold;
     border-radius: 5px;
     margin: 1.5rem 0 5rem 0;
+    background-color: #FDBB40;
 }
 
 
