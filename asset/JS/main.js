@@ -6,7 +6,7 @@ var priceElement = document.getElementById('price');
 var list = [
     ['Cheese', '1'],
     ['Tomato', '0.5'],
-    ['Egg', '1.5'],
+    ['Fried-egg', '1.5'],
     ['Lettuce', '1'],
     ['Mustard', '0.5'],
     ['Ketchup', '1']
@@ -20,7 +20,7 @@ while (i < list.length) {
         `
     <li class="list-none half_flex-basis">
         
-        <img class="food-emoticon" src="./asset/img/"+(list[i][0])+".svg">
+        <img class="food-emoticon" src="./asset/img/${list[i][0]}.svg">
         <label class="mx-1" for="${list[i][0]}">${list[i][0]}</label>
         <input type="checkbox" data-price="${list[i][1]}" id="${list[i][0]}">
         <span class="ml-05">Add</span>
