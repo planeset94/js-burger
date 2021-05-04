@@ -10,41 +10,40 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="main-container">
         <!-- HEADER SITE  -->
         <header id="header_site">
-            <h1>Create Your Burger</h1>
-
+            <div class="container">
+                <h1>Create Your Burger</h1>
+            </div>
         </header>
         <!-- /HEADER SITE  -->
 
         <!-- MAIN SITE  -->
         <main id="main_site">
-            <input type="text" placeholder="Name Your Burger">
-            <h4>Ingredients</h4>
-            <div class="form-ingredients">
-                <ul id="ingredients" class="d-flex-wrap">
-
-
-
-
-
-
-
-
-
-                </ul>
-                <div class="discount-group">
-                    <label for="discount">Discount Coupon</label>
-                    <input id="discount" type="text" placeholder="Enter your coupons">
+            <div class="container">
+                <input id="burgher-name" type="text" placeholder="Name Your Burger">
+                <h4>Ingredients</h4>
+                <div class="form-ingredients">
+                    <ul id="ingredients" class="d-flex-wrap">
+                    </ul>
+                    <div class="discount-group">
+                        <label for="discount">Discount Coupon</label>
+                        <input id="discount" type="text" placeholder="Enter your coupons">
+                    </div>
+                    <button id="calc_price">Calculate</button>
                 </div>
-                <button id="calc_price">Calculate</button>
             </div>
         </main>
         <!-- /MAIN SITE  -->
 
         <!-- FOOTER SITE  -->
         <footer id="footer_site">
+            <div class="container d-flex-nowrap flex-between">
+                <p>Your Price</p>
+                <p id="price">X</p>
+
+            </div>
 
         </footer>
         <!-- /FOOTER SITE  -->
