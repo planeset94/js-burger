@@ -63,21 +63,54 @@ calcPriceEl.addEventListener('click', function () {
         j++
     }
 
+    // creo una matrice che contiene coupon dello stesso valore 
+
+    var couponA = [
+        'ABC198',
+        'GH1230',
+        '009KMN'
+    ];
+
+    var couponB = [
+
+        'BELL20',
+        'CIC301',
+        'AL23MN'
+    ];
+
     // VERIFICO SE CI SONO COUPON VALIDI 
 
     if (discountEl.value == "") {
         price = (basicPrice + additionPrice);
 
-    } else if (discountEl.value == "AA123") {
+    } else if (couponA.includes(discountEl.value)) {
         averageDiscount = average_20;
         price = (basicPrice + additionPrice) * (1 - averageDiscount);
 
-    } else if (discountEl.value == "AK349") {
+    } else if (couponB.includes(discountEl.value)) {
         averageDiscount = average_40;
         price = (basicPrice + additionPrice) * (1 - averageDiscount);
-    } else {
-        alert('ERROR');
-    }
 
+    } else {
+        alert('Your coupon do not work');
+    }
     priceElement.innerHTML = price.toFixed(2) + " €";
+
+    // if (discountEl.value == "") {
+    //     price = (basicPrice + additionPrice);
+
+    // } else if (discountEl.value == "AA123") {
+    //     averageDiscount = average_20;
+    //     price = (basicPrice + additionPrice) * (1 - averageDiscount);
+
+    // } else if (discountEl.value == "AK349") {
+    //     averageDiscount = average_40;
+    //     price = (basicPrice + additionPrice) * (1 - averageDiscount);
+    // } else {
+    //     alert('ERROR');
+    // }
+
 });
+
+
+
